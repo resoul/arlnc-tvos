@@ -9,18 +9,18 @@
 /* Begin PBXBuildFile section */
 		89DF256E2B93431400BF8F21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DF256D2B93431400BF8F21 /* AppDelegate.swift */; };
 		89DF25702B93431400BF8F21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DF256F2B93431400BF8F21 /* ViewController.swift */; };
-		89DF25732B93431400BF8F21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89DF25712B93431400BF8F21 /* Main.storyboard */; };
 		89DF25752B93431600BF8F21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DF25742B93431600BF8F21 /* Assets.xcassets */; };
 		89DF25782B93431600BF8F21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89DF25762B93431600BF8F21 /* LaunchScreen.storyboard */; };
+		89DF257F2B93436300BF8F21 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DF257E2B93436300BF8F21 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		89DF256A2B93431400BF8F21 /* arlnc-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "arlnc-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89DF256D2B93431400BF8F21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89DF256F2B93431400BF8F21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		89DF25722B93431400BF8F21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89DF25742B93431600BF8F21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89DF25772B93431600BF8F21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89DF257E2B93436300BF8F21 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +55,9 @@
 			children = (
 				89DF256D2B93431400BF8F21 /* AppDelegate.swift */,
 				89DF256F2B93431400BF8F21 /* ViewController.swift */,
-				89DF25712B93431400BF8F21 /* Main.storyboard */,
 				89DF25742B93431600BF8F21 /* Assets.xcassets */,
 				89DF25762B93431600BF8F21 /* LaunchScreen.storyboard */,
+				89DF257E2B93436300BF8F21 /* TabBarController.swift */,
 			);
 			path = "arlnc-tvOS";
 			sourceTree = "<group>";
@@ -122,7 +122,6 @@
 			files = (
 				89DF25782B93431600BF8F21 /* LaunchScreen.storyboard in Resources */,
 				89DF25752B93431600BF8F21 /* Assets.xcassets in Resources */,
-				89DF25732B93431400BF8F21 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +132,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89DF257F2B93436300BF8F21 /* TabBarController.swift in Sources */,
 				89DF25702B93431400BF8F21 /* ViewController.swift in Sources */,
 				89DF256E2B93431400BF8F21 /* AppDelegate.swift in Sources */,
 			);
@@ -141,14 +141,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		89DF25712B93431400BF8F21 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				89DF25722B93431400BF8F21 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		89DF25762B93431600BF8F21 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,7 +281,6 @@
 				DEVELOPMENT_TEAM = K682D44QJG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -314,7 +305,6 @@
 				DEVELOPMENT_TEAM = K682D44QJG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
