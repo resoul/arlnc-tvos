@@ -7,20 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		892C6F292BA237F8009A25FC /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892C6F282BA237F8009A25FC /* UIView.swift */; };
+		892C6F2B2BA23808009A25FC /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892C6F2A2BA23808009A25FC /* Constraints.swift */; };
 		89DF256E2B93431400BF8F21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DF256D2B93431400BF8F21 /* AppDelegate.swift */; };
-		89DF25702B93431400BF8F21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DF256F2B93431400BF8F21 /* ViewController.swift */; };
 		89DF25752B93431600BF8F21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DF25742B93431600BF8F21 /* Assets.xcassets */; };
 		89DF25782B93431600BF8F21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89DF25762B93431600BF8F21 /* LaunchScreen.storyboard */; };
-		89DF257F2B93436300BF8F21 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DF257E2B93436300BF8F21 /* TabBarController.swift */; };
+		89EFF6862BA3AA770025E192 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EFF6852BA3AA770025E192 /* MainController.swift */; };
+		89EFF68A2BA3ACFF0025E192 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EFF6892BA3ACFF0025E192 /* NavigationView.swift */; };
+		89EFF68C2BA3AFA30025E192 /* NavigationCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EFF68B2BA3AFA30025E192 /* NavigationCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		892C6F282BA237F8009A25FC /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		892C6F2A2BA23808009A25FC /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
 		89DF256A2B93431400BF8F21 /* arlnc-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "arlnc-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89DF256D2B93431400BF8F21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		89DF256F2B93431400BF8F21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		89DF25742B93431600BF8F21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89DF25772B93431600BF8F21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89DF257E2B93436300BF8F21 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		89EFF6852BA3AA770025E192 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		89EFF6892BA3ACFF0025E192 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
+		89EFF68B2BA3AFA30025E192 /* NavigationCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,13 +59,48 @@
 		89DF256C2B93431400BF8F21 /* arlnc-tvOS */ = {
 			isa = PBXGroup;
 			children = (
-				89DF256D2B93431400BF8F21 /* AppDelegate.swift */,
-				89DF256F2B93431400BF8F21 /* ViewController.swift */,
-				89DF25742B93431600BF8F21 /* Assets.xcassets */,
-				89DF25762B93431600BF8F21 /* LaunchScreen.storyboard */,
-				89DF257E2B93436300BF8F21 /* TabBarController.swift */,
+				89EFF6822BA3AA170025E192 /* App */,
+				89EFF6812BA3A9E60025E192 /* Resource */,
 			);
 			path = "arlnc-tvOS";
+			sourceTree = "<group>";
+		};
+		89EFF6812BA3A9E60025E192 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				89DF25742B93431600BF8F21 /* Assets.xcassets */,
+				89DF25762B93431600BF8F21 /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		89EFF6822BA3AA170025E192 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				89EFF6842BA3AA520025E192 /* Main */,
+				89EFF6832BA3AA2D0025E192 /* Extnsion */,
+				89DF256D2B93431400BF8F21 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		89EFF6832BA3AA2D0025E192 /* Extnsion */ = {
+			isa = PBXGroup;
+			children = (
+				892C6F282BA237F8009A25FC /* UIView.swift */,
+				892C6F2A2BA23808009A25FC /* Constraints.swift */,
+			);
+			path = Extnsion;
+			sourceTree = "<group>";
+		};
+		89EFF6842BA3AA520025E192 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				89EFF6852BA3AA770025E192 /* MainController.swift */,
+				89EFF6892BA3ACFF0025E192 /* NavigationView.swift */,
+				89EFF68B2BA3AFA30025E192 /* NavigationCellView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,8 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89DF257F2B93436300BF8F21 /* TabBarController.swift in Sources */,
-				89DF25702B93431400BF8F21 /* ViewController.swift in Sources */,
+				89EFF6862BA3AA770025E192 /* MainController.swift in Sources */,
+				892C6F292BA237F8009A25FC /* UIView.swift in Sources */,
+				89EFF68C2BA3AFA30025E192 /* NavigationCellView.swift in Sources */,
+				89EFF68A2BA3ACFF0025E192 /* NavigationView.swift in Sources */,
+				892C6F2B2BA23808009A25FC /* Constraints.swift in Sources */,
 				89DF256E2B93431400BF8F21 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
